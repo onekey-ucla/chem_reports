@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Organic Chemistry Video Quiz — Data Summary</title>
+  <style>
+    :root {
+      --ucla-blue: #2774AE;
+      --ucla-gold: #FFD100;
+      --ucla-navy: #005587;
+      --ucla-soft: #e8f2fb;
+      --text: #212121;
+      --muted: #444;
+      --rule: #c5dcea;
+      --max-w: 56rem;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+      color: var(--text);
+      line-height: 1.5;
+      background: #fafafa;
+    }
+    .report-header,
+    .report-footer {
+      background: linear-gradient(180deg, #fff 0%, var(--ucla-soft) 100%);
+      border-bottom: 4px solid var(--ucla-blue);
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+    .report-footer {
+      border-bottom: none;
+      border-top: 4px solid var(--ucla-blue);
+      margin-top: 2.5rem;
+      background: #fff;
+    }
+    .logo-bar img {
+      max-height: 64px;
+      width: auto;
+      height: auto;
+      vertical-align: middle;
+    }
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 1.75rem 1.25rem 3rem;
+    }
+    h1 {
+      color: var(--ucla-navy);
+      font-size: 1.65rem;
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+      line-height: 1.25;
+    }
+    h2 {
+      color: var(--ucla-blue);
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 0.6rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 2px solid var(--ucla-gold);
+    }
+    h3 {
+      color: var(--ucla-navy);
+      font-size: 1.05rem;
+      margin-top: 1.35rem;
+    }
+    .lede {
+      font-size: 0.98rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    a { color: var(--ucla-blue); }
+    a:visited { color: #1a5f8a; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0 1.25rem;
+      font-size: 0.92rem;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,87,135,0.08);
+    }
+    th {
+      background: var(--ucla-blue);
+      color: #fff;
+      text-align: left;
+      padding: 0.5rem 0.65rem;
+      font-weight: 600;
+    }
+    td {
+      padding: 0.45rem 0.65rem;
+      border: 1px solid var(--rule);
+    }
+    tbody tr:nth-child(even) { background: #f8fcff; }
+    caption {
+      caption-side: top;
+      text-align: left;
+      font-weight: 600;
+      color: var(--ucla-navy);
+      padding: 0.35rem 0;
+      margin-bottom: 0.25rem;
+    }
+
+    .figure-block {
+      margin: 2rem 0;
+      padding: 1rem;
+      background: #fff;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+    }
+    .figure-block img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    /* Built report: chart SVG is inlined (see build_html_report.py) */
+    .svg-embed {
+      overflow: auto;
+      margin: 0.5rem auto 0;
+      max-width: min(100%, 58rem);
+    }
+    .svg-embed svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .figure-block img[src$=".svg"] {
+      width: min(100%, 58rem);
+    }
+    .figure-block figcaption {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+      line-height: 1.45;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      color: var(--ucla-navy);
+      margin-bottom: 0.35rem;
+    }
+    ul { padding-left: 1.35rem; }
+    li { margin-bottom: 0.35rem; }
+    .note {
+      font-size: 0.88rem;
+      color: var(--muted);
+      border-left: 4px solid var(--ucla-gold);
+      padding-left: 0.75rem;
+      margin: 1rem 0;
+    }
+    .muted { color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header class="report-header logo-bar">
+    <img src="assets/ucla_banner_cropped.png" alt="UCLA" width="200" />
+  </header>
+
+  <main>
+    <article>
+      <h1>Organic Chemistry Video Quiz — Student Data Summary</h1>
+
+      <p class="lede">
+        Snapshot from anonymized quiz exports with two cohort labels: <strong>Section A (MQ)</strong>, <strong>Section B (DD)</strong>.
+        Responses: Section A <strong>171</strong> submits; Section B <strong>210</strong> submits (<strong>381</strong> pooled).
+      </p>
+
+      <p><strong>Purpose:</strong> Stakeholder briefing on keyed performance on Section 3 items (3A–3F), totals, distractor mixes, and other survey prompts.</p>
+
+      <p><strong>Video:</strong>
+        <a href="https://drive.google.com/file/d/1tVXl61cqf6g5cvm2p4G_TSNd5LP-W8DD/view">
+          instructional video (Google&nbsp;Drive)
+        </a>
+      </p>
+
+      <p><strong>Data sources:</strong> Section A ← <code>MQ_Organic Chemistry Video Quiz Student Analysis Report anon.csv</code>; Section B ← <code>DD_CHEM14BE_Organic Chemistry Video Quiz Student Analysis Report_Anonymous.csv</code>.</p>
+
+      <p><strong>Scoring:</strong> For 3A–3F, responses were coded <strong>1</strong> = keyed correct option vs <strong>0</strong> = other chosen response. Blank stems are reported separately and excluded from item percentages.</p>
+
+      <h2>Figures</h2>
+      <p class="muted"><strong>Authoring:</strong> this file is the <strong>template</strong> (<code>Organic_Chemistry_Video_Quiz_Report.template.html</code>) with <code>&lt;img src=&quot;figures/…svg&quot;&gt;</code> placeholders. Run <code>python3 build_html_report.py</code> after charts to generate <code>Organic_Chemistry_Video_Quiz_Report.html</code> with SVG <strong>pasted into the HTML</strong> (charts are not separate image requests). PNGs in <code>figures/</code> stay for Markdown/embeds.</p>
+
+      <figure class="figure-block">
+        <span class="tag">Fig. 1</span>
+        <img src="figures/fig1_content_by_section.svg" alt="Fig 1 Section 3 per-stem keyed rates percent cohorts 3A-3F" loading="lazy" />
+        <figcaption>
+          Each bar cluster is its <strong>own stem only</strong>: keyed correct respondents ÷ section respondents who answered that stem (blanks omitted). The <strong>Y scale is zoomed 70–101%</strong> — not 0-based — see callout on the chart. Diamonds = pooled MQ+DD same rule; ribbon shows a 90% benchmark on those rates.</figcaption>
+      </figure>
+
+      <figure class="figure-block">
+        <span class="tag">Fig. 2</span>
+        <img src="figures/fig2_score_distribution.svg" alt="Fig 2 histogram of keyed tally 0 sixths through 6 sixths Sections A vs B" loading="lazy" />
+        <figcaption>
+          Histogram of <strong>tallies</strong> (<strong>0/6 … 6/6</strong>). Pooled headline line and shaded column use <strong>black</strong>; shaded area = tallies 5/6 vs 6/6. Not per-stem % (Fig. 1).</figcaption>
+      </figure>
+
+      <figure class="figure-block">
+        <span class="tag">Fig. 3</span>
+        <img src="figures/fig3_pooled_by_topic.svg" alt="Fig 3 gap ranking vs strongest stem pooled" loading="lazy" />
+        <figcaption>
+          <strong>Relative difficulty</strong> after pooling MQ+DD: each bar is <strong>percentage points below the easiest keyed stem</strong> (not absolute item %). Gold marks the largest gap; order = high gap to low gap, not quiz sequence.</figcaption>
+      </figure>
+
+      <figure class="figure-block">
+        <span class="tag">Fig. 4</span>
+        <img src="figures/fig4_answer_mix_pooled.svg" alt="Fig 4 stacked answer mix pooled keyed vs distractors" loading="lazy" />
+        <figcaption>
+          <strong>Fig. 4 — Pooled (MQ+DD):</strong> one 100% stack per stem — compare to <strong>Fig. 5 (A)</strong> then <strong>Fig. 6 (B)</strong> for cohort-only splits; legend title + paragraph under the figure explain colors (same scheme on all three).</figcaption>
+      </figure>
+
+      <figure class="figure-block">
+        <span class="tag">Fig. 5</span>
+        <img src="figures/fig5_section_a_answer_mix.svg" alt="Fig 5 Section A keyed vs distractors 3A through 3F" loading="lazy" />
+        <figcaption>
+          <strong>Fig. 5 — Section A (MQ) only</strong> — same layout rules as Fig. 4 but rows limited to the MQ export before stacking; paired with Fig. 6 for Section B.</figcaption>
+      </figure>
+
+      <figure class="figure-block">
+        <span class="tag">Fig. 6</span>
+        <img src="figures/fig5_section_b_answer_mix.svg" alt="Fig 6 Section B keyed vs distractors 3A through 3F" loading="lazy" />
+        <figcaption>
+          <strong>Fig. 6 — Section B (DD) only</strong> — mirror of Fig. 5; stacked shares use the CHEM14BE cohort only. Read against Fig. 4 pooled totals to see if a wrong option clusters in one section.</figcaption>
+      </figure>
+
+      <h2>Section 3 — binary keyed results (% correct)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Topic</th>
+            <th>Section A — % (n answered)</th>
+            <th>Section B — % (n answered)</th>
+            <th>Combined — % (n)</th>
+            <th>Blanks A/B</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>3A</td><td>Definition</td><td>95.8% (168)</td><td>94.7% (208)</td><td>95.2% (376)</td><td>7 / 2</td></tr>
+          <tr><td>3B</td><td>Wedges/hashes</td><td>97.6% (167)</td><td>97.1% (207)</td><td>97.3% (374)</td><td>8 / 3</td></tr>
+          <tr><td>3C</td><td>Bonds on C</td><td>95.2% (168)</td><td>97.1% (208)</td><td>96.3% (376)</td><td>8 / 2</td></tr>
+          <tr><td>3D</td><td>Carbons in shorthand</td><td>82.6% (167)</td><td>83.1% (207)</td><td>82.9% (374)</td><td>8 / 3</td></tr>
+          <tr><td>3E</td><td>Structure count</td><td>91.6% (166)</td><td>93.8% (209)</td><td>92.8% (375)</td><td>9 / 1</td></tr>
+          <tr><td>3F</td><td>Coffee molecules</td><td>94.5% (165)</td><td>95.2% (207)</td><td>94.9% (372)</td><td>12 / 3</td></tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>3D (implicit carbons / line-angle) weakest for both sections (~83% pooled).</li>
+        <li>Between-section differences are modest on content items.</li>
+        <li>About <strong>71%</strong> of students (<strong>271 / 381</strong>) answered all keyed items correctly (6 of 6), when counting students with any answered stem.</li>
+      </ul>
+
+      <h2>Other survey (non-binary)</h2>
+      <p class="lede">Likert items use −2 (strongly disagree) through +2 (strongly agree); means below summarize cohort mood. Figures show the same aggregates as visuals; headline tables replicate the LMS export totals.</p>
+
+      <figure class="figure-block">
+        <span class="tag">Fig. 7</span>
+        <img src="figures/fig6_likert_pre_post.svg" alt="Fig 7 Likert survey means pre and post minus 2 to plus 2" loading="lazy" />
+        <figcaption>
+          Means on the LMS Likert stem (−2 strongly disagree … +2 strongly agree; neutral = 0). Blank responses omitted row-by-row; see non-blank counts on the labels. Same scales as tables below — not keyed exam items (3A–3F).
+        </figcaption>
+      </figure>
+
+      <figure class="figure-block">
+        <span class="tag">Fig. 8</span>
+        <img src="figures/fig7_watch_time_by_section.svg" alt="Fig 8 watch time grouped bars per LMS option with counts and table" loading="lazy" />
+        <figcaption>
+          Percent of each cohort picking each LMS watch-time checklist option; annotations and footer table mirror the tally tables below — bar length reflects share within cohort, not pooled across sections.
+        </figcaption>
+      </figure>
+
+      <p class="muted"><strong>Numeric recap —</strong> same aggregates as Fig. 7–8 (export wording may differ slightly from chart labels).</p>
+
+      <h3>Pre-video (first occurrence)</h3>
+      <table>
+        <thead><tr><th>Stem</th><th>Section A mean</th><th>Section B mean</th></tr></thead>
+        <tbody>
+          <tr><td>Nervous about organic chemistry</td><td>+1.06</td><td>+1.15</td></tr>
+          <tr><td>Excited to learn ochem</td><td>+0.46</td><td>+0.38</td></tr>
+          <tr><td>Chemistry ↔ real world</td><td>+0.96</td><td>+0.89</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Post-video perceptions</h3>
+      <table>
+        <thead><tr><th>Stem</th><th>Section A</th><th>Section B</th></tr></thead>
+        <tbody>
+          <tr><td>Video introduced unfamiliar concepts</td><td><strong>+1.00</strong></td><td>+0.86</td></tr>
+          <tr><td>Immersive format helped</td><td><strong>+1.00</strong></td><td>+0.85</td></tr>
+          <tr><td>Needed to rewatch</td><td>−0.02</td><td>−0.13</td></tr>
+          <tr><td>Changed how I think about ochem</td><td>+0.60</td><td>+0.29</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Watch time (counts)</h3>
+      <table>
+        <thead><tr><th>Response</th><th>Section A</th><th>Section B</th></tr></thead>
+        <tbody>
+          <tr><td>Watched entire video</td><td>143</td><td>166</td></tr>
+          <tr><td>30&nbsp;s–2&nbsp;min</td><td>16</td><td>25</td></tr>
+          <tr><td>30&nbsp;s or less</td><td>3</td><td>10</td></tr>
+          <tr><td>Did not watch</td><td>2</td><td>5</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Implementation notes</h2>
+      <ul>
+        <li>HTML stripped from LMS MC cells before matching keyed text.</li>
+        <li>Exports are anonymous — Section A ↔ MQ CSV; Section B ↔ DD CSV.</li>
+        <li>Open-ended essays not summarized — still in raw CSV.</li>
+      </ul>
+
+      <p class="muted" style="margin-top: 2rem;">Prepared for stakeholder review · Source quiz exports (March&nbsp;2026 submissions).</p>
+    </article>
+  </main>
+
+  <footer class="report-footer logo-bar">
+    <img src="assets/ucla_banner_cropped.png" alt="UCLA" width="200" />
+    <p class="muted" style="margin: 0.75rem 0 0;">
+      Organic Chemistry Video Quiz Report · Sections A&nbsp;(MQ) &amp; B&nbsp;(DD)
+    </p>
+  </footer>
+</body>
+</html>
