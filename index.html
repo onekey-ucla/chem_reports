@@ -372,6 +372,41 @@ code{
 }
 .likert .vals strong{color:var(--text);font-variant-numeric:tabular-nums;}
 
+/* ---------- survey instrument wording (verbatim prompts) ---------- */
+.survey-instrument{
+  margin:1rem 0 1.35rem;
+}
+.survey-instrument .blk{
+  border:1px solid var(--rule);
+  border-radius:8px;
+  padding:.9rem 1.05rem;
+  margin-bottom:.75rem;
+  background:#fff;
+}
+.survey-instrument .blk p.instr{
+  font-size:.86rem;
+  color:var(--text);
+  margin:0 0 .45rem;
+  line-height:1.45;
+}
+.survey-instrument .stepnum{
+  font-weight:700;
+  color:var(--ucla-navy);
+  margin-right:.35rem;
+}
+.survey-instrument .blk p.scale-hint{
+  font-size:.78rem;
+  color:var(--muted);
+  margin:0 0 .55rem;
+  font-style:italic;
+}
+.survey-instrument .blk ul{
+  margin:0;
+  padding-left:1.15rem;
+  font-size:.86rem;
+  line-height:1.5;
+}
+
 footer{
   margin-top:2rem;
   padding-top:1rem;
@@ -750,14 +785,58 @@ footer{
      SECTION 4 — CROSS-CUTTING SURVEY
      ============================================================ -->
 <h2>Cross-cutting survey signals</h2>
-<p class="lede">Baseline and post-video Likerts from the same anonymized exports.</p>
+<p class="lede">
+  Means use the LMS numeric code <strong>−2</strong> (strongly disagree) through <strong>+2</strong> (strongly agree); neutral = 0.
+  The same three attitude statements are asked <strong>before</strong> and again <strong>after</strong> the video; following charts summarize cohort means (blank responses omitted row-wise).
+</p>
 
-<h3>Pre-video baseline attitudes</h3>
+<div class="survey-instrument">
+  <div class="blk">
+    <p class="instr"><span class="stepnum">1.</span> Thinking back to before you watched the video, please select your level of agreement with the following statements:</p>
+    <p class="scale-hint">Strongly disagree · Disagree · Neutral · Agree · Strongly agree</p>
+    <ul>
+      <li>I see a connection between chemistry and real-world topics.</li>
+      <li>I am excited to learn organic chemistry.</li>
+      <li>I am nervous about taking organic chemistry.</li>
+    </ul>
+  </div>
+  <div class="blk">
+    <p class="instr"><span class="stepnum">2.</span> Now that you have watched the video, please select your level of agreement with the following statements:</p>
+    <p class="scale-hint">Strongly disagree · Disagree · Neutral · Agree · Strongly agree</p>
+    <ul>
+      <li>I see a connection between chemistry and real-world topics.</li>
+      <li>I am excited to learn organic chemistry.</li>
+      <li>I am nervous about taking organic chemistry.</li>
+    </ul>
+  </div>
+</div>
+
+<h3>Pre-video attitudes</h3>
 <figure class="figure">
-  <span class="tag">Three pre items · −2 strongly disagree … +2 strongly agree</span>
+  <span class="tag">Before the video · same three items · −2 … +2 cohort means</span>
   <div class="likert">
     <div class="item">
-      <h5>Nervous about organic chemistry</h5>
+      <h5>I see a connection between chemistry and real-world topics.</h5>
+      <div class="scale">
+        <div class="zero"></div>
+        <div class="dot mq" style="left:74.1%"></div>
+        <div class="dot dd" style="left:72.3%"></div>
+      </div>
+      <div class="ticks"><span>−2</span><span>0</span><span>+2</span></div>
+      <div class="vals"><span>MQ <strong>+0.96</strong></span><span>DD <strong>+0.89</strong></span></div>
+    </div>
+    <div class="item">
+      <h5>I am excited to learn organic chemistry.</h5>
+      <div class="scale">
+        <div class="zero"></div>
+        <div class="dot mq" style="left:61.6%"></div>
+        <div class="dot dd" style="left:59.4%"></div>
+      </div>
+      <div class="ticks"><span>−2</span><span>0</span><span>+2</span></div>
+      <div class="vals"><span>MQ <strong>+0.46</strong></span><span>DD <strong>+0.38</strong></span></div>
+    </div>
+    <div class="item">
+      <h5>I am nervous about taking organic chemistry.</h5>
       <div class="scale">
         <div class="zero"></div>
         <div class="dot mq" style="left:76.5%"></div>
@@ -766,33 +845,51 @@ footer{
       <div class="ticks"><span>−2</span><span>0</span><span>+2</span></div>
       <div class="vals"><span>MQ <strong>+1.06</strong></span><span>DD <strong>+1.15</strong></span></div>
     </div>
-    <div class="item">
-      <h5>Excited to learn organic chemistry</h5>
-      <div class="scale">
-        <div class="zero"></div>
-        <div class="dot mq" style="left:61.5%"></div>
-        <div class="dot dd" style="left:59.5%"></div>
-      </div>
-      <div class="ticks"><span>−2</span><span>0</span><span>+2</span></div>
-      <div class="vals"><span>MQ <strong>+0.46</strong></span><span>DD <strong>+0.38</strong></span></div>
-    </div>
-    <div class="item">
-      <h5>See chemistry in everyday life</h5>
-      <div class="scale">
-        <div class="zero"></div>
-        <div class="dot mq" style="left:74.0%"></div>
-        <div class="dot dd" style="left:72.3%"></div>
-      </div>
-      <div class="ticks"><span>−2</span><span>0</span><span>+2</span></div>
-      <div class="vals"><span>MQ <strong>+0.96</strong></span><span>DD <strong>+0.89</strong></span></div>
-    </div>
   </div>
-  <figcaption>Where students were before the video. Both cohorts started moderately nervous, mildly excited, and already noticing chemistry around them.</figcaption>
+  <figcaption>Baseline before the video. Blue = MQ, gold = DD.</figcaption>
 </figure>
 
-<h3>Post-video attitudes</h3>
+<h3>Post-video attitudes (same three statements)</h3>
 <figure class="figure">
-  <span class="tag">Four post items · −2 strongly disagree … +2 strongly agree</span>
+  <span class="tag">After the video · repeated prompts · −2 … +2 cohort means</span>
+  <div class="likert">
+    <div class="item">
+      <h5>I see a connection between chemistry and real-world topics.</h5>
+      <div class="scale">
+        <div class="zero"></div>
+        <div class="dot mq" style="left:84.7%"></div>
+        <div class="dot dd" style="left:82.4%"></div>
+      </div>
+      <div class="ticks"><span>−2</span><span>0</span><span>+2</span></div>
+      <div class="vals"><span>MQ <strong>+1.39</strong></span><span>DD <strong>+1.30</strong></span></div>
+    </div>
+    <div class="item">
+      <h5>I am excited to learn organic chemistry.</h5>
+      <div class="scale">
+        <div class="zero"></div>
+        <div class="dot mq" style="left:76.3%"></div>
+        <div class="dot dd" style="left:69.1%"></div>
+      </div>
+      <div class="ticks"><span>−2</span><span>0</span><span>+2</span></div>
+      <div class="vals"><span>MQ <strong>+1.05</strong></span><span>DD <strong>+0.76</strong></span></div>
+    </div>
+    <div class="item">
+      <h5>I am nervous about taking organic chemistry.</h5>
+      <div class="scale">
+        <div class="zero"></div>
+        <div class="dot mq" style="left:62.1%"></div>
+        <div class="dot dd" style="left:65.7%"></div>
+      </div>
+      <div class="ticks"><span>−2</span><span>0</span><span>+2</span></div>
+      <div class="vals"><span>MQ <strong>+0.49</strong></span><span>DD <strong>+0.63</strong></span></div>
+    </div>
+  </div>
+  <figcaption>Repeated after the video — compare to the pre-video panel directly above. Nervousness drops toward neutral in both cohorts; excitement and “real-world connection” means rise.</figcaption>
+</figure>
+
+<h3>Additional post-video reflections</h3>
+<figure class="figure">
+  <span class="tag">Four additional post items · −2 strongly disagree … +2 strongly agree</span>
   <div class="likert">
     <div class="item">
       <h5>Unfamiliar ideas introduced</h5>
@@ -835,7 +932,7 @@ footer{
       <div class="vals"><span>MQ <strong>+0.60</strong></span><span>DD <strong>+0.29</strong></span></div>
     </div>
   </div>
-  <figcaption>Where students landed after the video. Blue = MQ, gold = DD. Centre line is 0 (neutral).</figcaption>
+  <figcaption>Items that appear only on the post survey (not repeats of the three attitude prompts). Blue = MQ, gold = DD. Centre line is 0 (neutral).</figcaption>
 </figure>
 
 <footer>
