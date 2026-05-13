@@ -547,6 +547,78 @@ code{
 }
 .ba-delta strong{color:var(--text);font-variant-numeric:tabular-nums;}
 
+/* thematic analysis (open-ended essays) */
+.ta-theme{
+  border:1px solid var(--rule);
+  border-radius:8px;
+  padding:.85rem 1rem 1rem;
+  margin:1rem 0;
+  background:#fff;
+}
+.ta-theme h4{
+  margin:0 0 .45rem;
+  font-size:1rem;
+  font-weight:600;
+  color:var(--ucla-navy);
+  line-height:1.3;
+}
+.ta-theme p.def{
+  margin:.2rem 0 .45rem;
+  font-size:.88rem;
+  line-height:1.5;
+}
+.ta-sub{
+  margin:.25rem 0 .5rem;
+  padding-left:1.2rem;
+  font-size:.82rem;
+  line-height:1.45;
+  color:var(--text);
+}
+.ta-kw{
+  margin:.35rem 0 0;
+  font-size:.78rem;
+  color:var(--muted);
+  line-height:1.4;
+}
+.ta-details{
+  margin-top:.55rem;
+  border-top:1px dashed var(--rule);
+  padding-top:.5rem;
+}
+.ta-details summary{
+  cursor:pointer;
+  font-size:.84rem;
+  font-weight:600;
+  color:var(--ucla-blue);
+  list-style-position:outside;
+}
+.ta-details summary::-webkit-details-marker{color:var(--ucla-navy);}
+.ta-quote{
+  margin:.5rem 0 0;
+  padding:.55rem .8rem .65rem 1rem;
+  border-left:4px solid var(--ucla-gold);
+  background:var(--soft);
+  font-size:.84rem;
+  line-height:1.45;
+}
+.ta-quote .ta-id{
+  display:block;
+  font-weight:700;
+  font-size:.76rem;
+  color:var(--ucla-navy);
+  margin-bottom:.35rem;
+  letter-spacing:.02em;
+}
+.ta-cross{
+  margin:.5rem 0 1rem;
+  padding-left:1.25rem;
+  font-size:.9rem;
+  line-height:1.5;
+  max-width:none;
+}
+.ta-cross > li{margin:.45rem 0;}
+.ta-cross ul{margin:.35rem 0 0;padding-left:1.1rem;font-size:.88rem;color:var(--text);}
+
 footer{
   margin-top:2rem;
   padding-top:1rem;
@@ -1125,8 +1197,99 @@ footer{
 
 <h2>Post qualitative responses</h2>
 <p class="lede">
-  Open-ended responses are not summarized in this dashboard; pull verbatim comments from the LMS exports or companion qualitative summaries when you need student voice in depth.
+  One item asked what stood out about the video and whether it changed how students think about organic chemistry.
+  <strong>369</strong> students submitted non-empty text (MQ 165 · DD 204; 12 left the essay field blank).
+  The summaries below use <strong>reflexive thematic analysis</strong> (Braun &amp; Clarke’s six-phase framework; overview in Ahmed <em>et al.</em>, 2025,
+  <a href="https://doi.org/10.1016/j.glmedi.2025.100198">DOI 10.1016/j.glmedi.2025.100198</a>).
+  Themes are <strong>constructed through interpretation</strong>, not “discovered” as neutral facts.
+  Where noted, keyword counts are <strong>supplementary sensitizing aids only</strong> (overlap across themes is common).
 </p>
+
+<h3>Open-ended responses — thematic summary</h3>
+
+<div class="ta-theme">
+  <h4>Theme 1 — Everyday anchoring through coffee (and embodied experience)</h4>
+  <p class="def">Students attach meaning when organic chemistry is tethered to familiar experience—especially coffee—or to smell, taste, receptor physiology, or daily rituals so that abstract structures feel concrete.</p>
+  <ul class="ta-sub">
+    <li>Coffee / café narrative as a pedagogical hinge.</li>
+    <li>Sensory physiology (olfaction, gustation, receptors, caffeine / adenosine) as evidence of relevance.</li>
+  </ul>
+  <p class="ta-kw">Illustrative keyword family: ~132 / 369 responses (overlap allowed).</p>
+  <details class="ta-details">
+    <summary>Example verbatim extract</summary>
+    <blockquote class="ta-quote"><span class="ta-id">[MQ 4]</span> One thing that stood out to me in the video was how organic molecules in coffee are responsible for smell, taste, and stimulant effects. It was interesting because when I think of ochem, I really only think about molecule diagrams and symbols, so it was particularly interesting to see the content be applied to real-life scenarios and how it is responsible for things that may affect us in our lives.</blockquote>
+  </details>
+</div>
+
+<div class="ta-theme">
+  <h4>Theme 2 — “Making it manageable”: clarity, pace, digestibility</h4>
+  <p class="def">Students value plain language, brevity, staged difficulty, and the sense that foundational ideas are within reach.</p>
+  <p class="ta-kw">Illustrative keyword family: ~81 / 369 (overlap allowed).</p>
+  <details class="ta-details">
+    <summary>Example verbatim extract</summary>
+    <blockquote class="ta-quote"><span class="ta-id">[DD 12]</span> What stood out to me most about this video is how they made it really simple and straightforward, making the concepts easy to understand. This changed how I thought about organic chemistry because it made it less intimidating.</blockquote>
+  </details>
+</div>
+
+<div class="ta-theme">
+  <h4>Theme 3 — Multimodality &amp; immersion (seeing carbon in space)</h4>
+  <p class="def">Animations, 3D representations, wedges/hashes, moving diagrams, and the café “set” are cited as scaffolds for both understanding and motivation.</p>
+  <p class="ta-kw">Illustrative keyword family: ~93 / 369 (overlap allowed).</p>
+  <details class="ta-details">
+    <summary>Example verbatim extract</summary>
+    <blockquote class="ta-quote"><span class="ta-id">[DD 46]</span> The animations stood out the most to me since they made it easier to understand the concepts.</blockquote>
+  </details>
+</div>
+
+<div class="ta-theme">
+  <h4>Theme 4 — Affective labor: fear, stigma, and emotional repositioning</h4>
+  <p class="def">Students name anticipatory anxiety, peer horror stories, and instructor “weeder” talk, and describe whether the video soothes, partially helps, or fails to move that anxiety.</p>
+  <ul class="ta-sub">
+    <li>Campus / peer narratives vs. a gentler counter-narrative.</li>
+    <li>Critique that fear-mongering from faculty compounds worry (e.g. <span class="muted">[DD 24]</span>).</li>
+    <li>Paradoxical effect: an anti-fear video can signal that the course must be frightening (e.g. <span class="muted">[DD 171]</span>).</li>
+  </ul>
+  <p class="ta-kw">Illustrative keyword family: ~92 / 369 (overlap allowed).</p>
+  <details class="ta-details">
+    <summary>Example verbatim extract</summary>
+    <blockquote class="ta-quote"><span class="ta-id">[DD 5]</span> Nothing stood out to me and nothing changed how I think about organic chemistry. I've just heard from all around me how difficult and scary and grade tanking it is that this video is not going to magically make me feel comfortable about it.</blockquote>
+  </details>
+</div>
+
+<div class="ta-theme">
+  <h4>Theme 5 — Conceptual recalibration &amp; prior knowledge</h4>
+  <p class="def">Students articulate new understanding of what counts as organic chemistry (often carbon-centered), skeletal / shorthand notation, or links back to general chemistry—sometimes surprised that the course is more visual than expected.</p>
+  <p class="ta-kw">Illustrative keyword family: ~118 / 369 (overlap allowed).</p>
+  <details class="ta-details">
+    <summary>Example verbatim extract</summary>
+    <blockquote class="ta-quote"><span class="ta-id">[MQ 105]</span> I had always thought that organic chemistry was about the human body and or chemistry happening in plants and animals. I had no idea that the definition of organic chemistry was just the chemistry of compounds with carbon inside of them.</blockquote>
+  </details>
+</div>
+
+<div class="ta-theme">
+  <h4>Theme 6 — Limits of impact: skepticism, non-conversion, friction</h4>
+  <p class="def">Non-shifts in thinking, pushback on “softening” difficulty, preference for utility framing (e.g. exams, MCAT), disinterest in applied examples, or trouble locating the assigned video.</p>
+  <p class="ta-kw">Illustrative keyword family: ~30 / 369 — undercounts mildly skeptical wording (overlap allowed).</p>
+  <details class="ta-details">
+    <summary>Example verbatim extract</summary>
+    <blockquote class="ta-quote"><span class="ta-id">[DD 151]</span> Nothing really stood out to me about this video. I honestly think trying to make students think the chemistry series here isnt hard is just going to trick them. The chem series is hard, the department doesnt need to lie. Maybe make organic chemistry more appealing by focusing more on why taking the class is useful, such as the MCAT or real word scenarios.</blockquote>
+  </details>
+</div>
+
+<h3>Cross-cutting observations</h3>
+<ol class="ta-cross">
+  <li><strong>Co-occurrence is typical.</strong> Many responses weave real-world examples, praise for visuals, and emotional relief in the same short paragraph; themes are not mutually exclusive boxes.</li>
+  <li><strong>MQ vs. DD.</strong> No statistical test of theme prevalence was run. Close reading did not show two radically different “cultures”; differences are subtle (e.g. DD with somewhat more explicit coffee mentions in this slice).</li>
+  <li><strong>Practice-facing implications (descriptive, not causal):</strong>
+    <ul>
+      <li><strong>Strength signal:</strong> For many students, <em>contextualization + spatial representations + tone</em> read as engaging and legible.</li>
+      <li><strong>Risk signal:</strong> A <em>credibility gap</em> can open if in-class messaging later contradicts the pilot’s reassurance—see also <span class="muted">[DD 24]</span>, <span class="muted">[DD 78]</span> (“more difficult than they painted it”).</li>
+      <li><strong>Access:</strong> Sparse but important notes that the video was hard to find in the LMS argue for navigation / placement checks.</li>
+    </ul>
+  </li>
+</ol>
+
+<p class="muted">A companion write-up with additional verbatim extracts and methodological notes may be distributed with the CSV exports; quotations on this page are illustrative.</p>
 
 <footer>
   Sources — MQ <code>MQ_Organic Chemistry Video Quiz Student Analysis Report anon.csv</code> (n = 171) ·
