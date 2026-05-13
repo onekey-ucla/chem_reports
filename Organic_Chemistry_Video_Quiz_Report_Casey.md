@@ -8,14 +8,6 @@
 **Response counts:** Section A (MQ) **171** submits · Section B (DD) **210** submits (**381** combined).  
 **Scoring:** For **Section 3 items (3A–3F)** below, student answers were coded **1 = selected the keyed correct option** vs **0 = other selected response**. **Blanks** (no selection for that stem) are reported separately and **excluded** from item-level percentages.
 
-## Section 1 — Population covered (general instructional cohort vs. targeted subgroups)
-
-The exports reflect **students enrolled in the two UCLA course sections summarized here** (**Section A / MQ**, **Section B / DD / CHEM14BE**): a **general undergraduate instructional population**, defined by enrollment in those sections—not recruitment based on nationality, ethnicity, religion, or other participant identity strata.
-
-If you communicate these results externally, phrase them as **patterns in convenience cohorts of enrolled learners**, **not** as representative of Israeli, Jewish, or any narrow identity-defined group **unless** a separate study deliberately samples such a subgroup and collects matching demographics (this LMS export cannot support that subgroup claim).
-
-For **comparison studies** framed as Israeli/Jewish-only samples **versus** a broader general-population denominator, preserve that distinction in the **research design section** there; nothing in Section 3 onward should be read as collapsing those frames without explicit sampling documentation.
-
 ---
 
 ### Visualizations (embedded PNGs)

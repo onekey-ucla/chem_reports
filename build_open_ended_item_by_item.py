@@ -26,21 +26,9 @@ def main() -> None:
     lines = [
         "# Open-ended responses — item by item",
         "",
-        "## Section 1 — Sampling frame & how to interpret “population”",
-        "",
-        "Items below are verbatim essay replies from anonymized LMS exports for **two UCLA introductory organic chemistry cohorts** "
-        "(**MQ / Section A**, **DD / Section B CHEM14BE**). That is **general-course enrollment**, not purposive recruitment of "
-        "Israeli-identifying, Jewish-identifying, or any other subgroup. **Do not** describe these transcripts as pertaining only "
-        "to Israeli or Jewish respondents unless separate IRB-compliant sampling and linkage fields prove that frame.",
-        "",
-        "If you juxtapose analyses meant for **Israeli/Jewish-only** cohorts versus a **general population**, keep those as "
-        "**explicitly distinct study designs**; this export supports only the UCLA instructional-population wording above.",
-        "",
-        "---",
-        "",
-        'Each following block is **one LMS submission** (essay prompt: “What stood out to you most about this video…”). '
+        'Each block is **one LMS submission** (essay prompt: “What stood out to you most about this video…”). '
         'If the export has no essay text (`essay_blank` in CSV), it is labeled **Blank: yes**. '
-        "Otherwise the full reply is verbatim from the anonymized export (HTML stripped).",
+        'Otherwise the full reply is verbatim from the anonymized export (HTML stripped).',
         "",
         "*Theme codes* are automated flags from `extract_theme_codes.py` (`themes_flagged`); treat as illustrative.",
         "",
